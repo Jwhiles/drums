@@ -1,0 +1,19 @@
+{
+  "name": "drums",
+  "version": "1.0.0",
+  "description": "Drum synthesizer",
+  "main": "app.ts",
+  "scripts": {
+    "start": "node server.js",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rx": "^4.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^2.6.2"
+  }
+}
