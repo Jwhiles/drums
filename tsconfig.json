@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "outFile": "public/app.js",
+    "sourceMap": true,
   },
   "include": [
     "src/**/*"
