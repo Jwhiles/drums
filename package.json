@@ -6,15 +6,19 @@
   "scripts": {
     "start": "node server.js",
     "build": "tsc",
+    "tsc": "tsc",
+    "webpack": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2",
-    "rx": "^4.1.0"
+    "rxjs": "^5.5.6"
   },
   "devDependencies": {
-    "typescript": "^2.6.2"
+    "ts-loader": "^3.2.0",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0"
   }
 }

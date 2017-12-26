@@ -1,14 +1,20 @@
-const context = new AudioContext();
+import Rx from 'rxjs/Rx';
 
-const destination = context.destination;
+function createSound() {
+  const context = new AudioContext();
 
-const gain = context.createGain();
-gain.gain.value = 0.6;
-gain.connect(destination);
+  const destination = context.destination;
 
-const osc = context.createOscillator();
-osc.type = "sawtooth";
-osc.frequency.value = 440;
-osc.connect(gain);
+  const gain = context.createGain();
+  gain.gain.value = 0.6;
+  gain.connect(destination);
 
-osc.start();
+  const osc = context.createOscillator();
+  osc.type = "sawtooth";
+  osc.frequency.value = 440;
+  osc.connect(gain);
+
+  osc.start();
+
+  osc.stop(0.2);
+}
