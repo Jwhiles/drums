@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "moduleResolution": "node",
     "outFile": "public/app.js",
     "sourceMap": true,
     "module": "system",
